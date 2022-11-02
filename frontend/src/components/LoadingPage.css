@@ -1,0 +1,89 @@
+.body8{
+    background-image: url('../images/bus-new.webp');
+    background-repeat: no-repeat;
+	height: 800px;
+	overflow: hidden;
+	background-size: cover;
+}
+.form-control
+{
+	margin-left: 1050px;
+	margin-top: 50px;
+}
+
+.topic1
+{
+	color: white;
+	margin-left: 1000px;
+	font-size: 50px;
+	font-style:italic;
+	margin-top: 50px;
+}
+
+.topic2
+{
+	color: white;
+	margin-left: 1200px;
+	font-size: 20px;
+	margin-top: 50px;
+}
+
+.topic3
+{
+	color: white;
+	margin-left: 1210px;
+	font-size: 20px;
+	margin-top: -10px;
+}
+
+.topic4
+{
+	color: white;
+	margin-left: 1210px;
+	font-size: 20px;
+	margin-top: -10px;
+}
+
+
+.topic5
+{
+	color: white;
+	margin-left: 1200px;
+	font-size: 20px;
+	margin-top: -10px;
+}
+
+.topic6
+{
+	color: white;
+	margin-left: 1180px;
+	font-size: 20px;
+	margin-top: -10px;
+}
+
+.learn_btn {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	width: 20%;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: "Lato", sans-serif;
+	color: #fff;
+	text-align: center;
+	background-color: rgba(8, 8, 8, 0.7);
+	box-shadow: 3px 3px 8px #10B48E, -3px -3px 8px #10B48E;
+	transition: all 0.5s;
+	margin-left: 1130px;
+	margin-top: 50px;
+}
+
+.learn_btn:hover {
+	background-color: #10B48E;
+}
+
+.learn_btn:active {
+	background-color: #88ef9e;
+}
