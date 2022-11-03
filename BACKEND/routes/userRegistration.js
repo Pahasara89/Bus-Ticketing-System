@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { User, validate } = require("../models/user");
 const bcrypt = require("bcrypt");
+const alert = require('alert');
 
 
 router.post("/registration", async (req, res) => {
@@ -21,7 +22,8 @@ router.post("/registration", async (req, res) => {
 		await new User({ ...req.body, password: hashPassword }).save();
 		res.status(201).send({ message: "User Registration successfully" });
 	} catch (error) {
-		res.status(500).send({ message: "Internal Server Error" });
+		alert('Product already exists');
+        console.log(error);
 	}
 });
 

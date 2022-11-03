@@ -18,7 +18,7 @@ export default function UserRegistration(){
     const [data, setData] = useState({
         firstName: "",
         lastName: "",
-        adddress: "",
+        address: "",
         mobileNumber: "",
         email: "",
         password: ""
