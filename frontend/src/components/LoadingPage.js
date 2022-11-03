@@ -16,12 +16,6 @@ export default function LoadingPage() {
             <HomeNavBar />
             <div className='body8'>
 
-                <div id="repGSearch" className='col-lg-3 mt-2 mb-2 ml-5'>
-
-                    <input type="search" className="form-control" placeholder="Search" value={q} onChange={(e) => setQ(e.target.value)} />
-
-                </div>
-
                 <div className='topic1'>
 
                     <h1>Welcome To</h1>
@@ -30,7 +24,7 @@ export default function LoadingPage() {
                 </div>
 
                 <div className='topic2'>
-                    <p>Qyuick Search</p>
+                    <p>Quick Search</p>
                 </div>
 
                 <div className='topic3'>
@@ -49,7 +43,7 @@ export default function LoadingPage() {
                     <p>Hassel-Free bus ticketing</p>
                 </div>
 
-                <Link to = '/add-feedback'><button  className="learn_btn"> Learn More </button></Link>
+                <Link to = '/AboutUs'><button  className="learn_btn"> Learn More </button></Link>
 
 
             </div>

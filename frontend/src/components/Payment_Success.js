@@ -20,6 +20,7 @@ function Payment_Success() {
 
     const [bankOwnerName , setBankOwnerName] = useState('');
     const [Pay_date , setPay_date] = useState('');
+    const [Pay_ID , setPay_ID] = useState('');
     const [BanKName , setBanKName] = useState('');
     const [Card_No , setCard_No] = useState('');
     const [Cvv , setCvv] = useState('');
@@ -58,6 +59,7 @@ function Payment_Success() {
 
         setBankOwnerName(localStorage.getItem("bankOwner"));
         setPay_date(localStorage.getItem("Pay_date"));
+        setPay_ID(localStorage.getItem("Pay_ID"));
         setBanKName(localStorage.getItem("BanKName"));
         setCard_No(localStorage.getItem("Card_No"));
         setExpiry(localStorage.getItem("Expiry"));
@@ -115,7 +117,7 @@ function Payment_Success() {
                   
                       <h1>Purchase Details</h1>
                       <p className='Receipt3'>Payment ID :</p>
-                      <p className='Receipt2'>{localStorage.getItem("Pay_ID")}</p>
+                      <p className='Receipt2'>{Pay_ID}</p>
 
                    
 

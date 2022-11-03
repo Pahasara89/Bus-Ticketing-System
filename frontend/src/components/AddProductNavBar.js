@@ -22,7 +22,7 @@ function Navbar() {
                         
                         <Link to="/add" className="btn nav-link anime color active" style={{color:"white"}} aria-current="page">Add schedule</Link>
                         <Link to="/view" className="btn nav-link anime color" style={{color:"white"}}>Schedule Tabel</Link>
-                       
+                        <Link to="/printreport" className="btn nav-link anime color" style={{color:"white"}} aria-current="page">Generate Report</Link>
                     </div>
                 </div>
             </div>

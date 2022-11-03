@@ -51,7 +51,7 @@ export default function ViewPaymentDetails(){
 
         BanK_Owner_Name: "",
         
-        Order_ID: "",
+       
         Totle_price: "",
         Pay_date: "",
  
@@ -79,7 +79,7 @@ export default function ViewPaymentDetails(){
         const updatePaymentDetails ={
             ID: editPayment,
             
-            Order_ID: editFormData.Order_ID,
+           
 
             BanK_Owner_Name: editFormData.BanK_Owner_Name,
             Totle_price: editFormData.Totle_price,
@@ -90,10 +90,7 @@ export default function ViewPaymentDetails(){
             Expiry: editFormData.Expiry,
             Cvv: editFormData.Cvv,
 
-            Strees_Address: editFormData.Strees_Address,
-            City: editFormData.City,
-            State: editFormData.State,
-            Zip_Code: editFormData.Zip_Code,
+          
 
             
             
@@ -120,7 +117,7 @@ export default function ViewPaymentDetails(){
         const formValues = {
             Pay_ID: Payment_Details.Pay_ID,
 
-            Order_ID: Payment_Details.Order_ID,
+      
 
             BanK_Owner_Name: Payment_Details.BanK_Owner_Name,
             Totle_price: Payment_Details.Totle_price,
@@ -131,10 +128,7 @@ export default function ViewPaymentDetails(){
             Expiry: Payment_Details.Expiry,
             Cvv: Payment_Details.Cvv,
 
-            Strees_Address: Payment_Details.Strees_Address,
-            City: Payment_Details.City,
-            State: Payment_Details.State,
-            Zip_Code: Payment_Details.Zip_Code,
+       
 
             
         }
@@ -198,7 +192,6 @@ export default function ViewPaymentDetails(){
                             
                             <th>PAY ID</th>
                             <th>OwnerName</th>
-                            <th>Order ID</th>
                             <th>Amount</th>
                             <th>Date</th>
                             <th>Action</th>
@@ -211,7 +204,6 @@ export default function ViewPaymentDetails(){
                                 return Payment_Details
                             }else if(Payment_Details.BanK_Owner_Name.toLowerCase().includes(q.toLowerCase())||
                                      Payment_Details.Pay_ID.toLowerCase().includes(q.toLowerCase()) ||
-                                     Payment_Details.Order_ID.toLowerCase().includes(q.toLowerCase())||
                                      Payment_Details.Pay_date.toLowerCase().includes(q.toLowerCase())){
                                 return Payment_Details
                             }

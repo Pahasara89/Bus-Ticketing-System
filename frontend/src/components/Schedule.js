@@ -165,8 +165,7 @@ export default function PrintReport() {
 
     return (
         <div>
-            <AdminNavBar/>
-            <ViewProductNavBar />
+            <HomeNavBar />
 
 
             <br></br>
@@ -238,7 +237,6 @@ export default function PrintReport() {
                                     <th>Time Schedule</th>
                                     <th>Price</th>
                                     <th>Bus Quantity</th>
-                                    <th>Stock</th>
 
                                 </tr>
                             </thead>
@@ -261,29 +259,7 @@ export default function PrintReport() {
                                             <td className='td'>{product.size}</td>
                                             <td className='td'>LKR.{product.price}.00</td>
                                             <td className='td'>{product.quantity}{product.unit}</td>
-                                            <td>
-                                                {(() => {
-
-                                                    if (product.quantity <= 10) {
-
-                                                        return (
-
-                                                            <div style={{ backgroundColor: 'red', color: 'white', textAlign: 'center' }}>Low</div>
-
-                                                        )
-
-                                                    } else {
-
-                                                        return (
-
-                                                            <div style={{ backgroundColor: 'Green', color: 'white', textAlign: 'center' }}>Available</div>
-
-                                                        )
-
-                                                    }
-
-                                                })()}
-                                            </td>
+                                        
                                             
                                         </tr>
                                     </Fragment>

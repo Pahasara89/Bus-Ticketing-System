@@ -1,0 +1,23 @@
+.boy  {
+	
+	font-family: sans-serif;
+	background-image: url('../images/about.gif');
+	background-repeat: no-repeat;
+	height: 1000px;
+	overflow: hidden;
+	background-size: cover;
+	
+	
+}
+
+.boy h6 {
+	font-size: 2.2rem;
+	color: rgb(7, 7, 7);
+	margin-bottom: 80px;
+	margin-left: 650px;
+
+}
+.boy p9 {
+    font-size: 20px;
+   
+}

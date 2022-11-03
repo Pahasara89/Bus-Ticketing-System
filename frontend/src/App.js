@@ -12,6 +12,8 @@ import ViewAdmin from './components/ViewAdmin';
 import AddProduct from './components/AddProduct';
 import ViewProduct from './components/ViewProduct';
 import PrintReport from './components/PrintReport';
+import Schedule from './components/Schedule';
+
 
 import AddPaymentDetails from './components/AddPaymentDetails';
 import ViewPaymentDetails from './components/ViewPaymentDetails';
@@ -44,6 +46,7 @@ import TopUp from './components/TopUp';
 import PakageHome from './components/PakageHome';
 import Register from './components/Register';
 import Login from './components/Login';
+import AboutUs from './components/AboutUs';
 
 import AdminRegistration from './components/Admin/AdminRegistration';
 import AdminLogin from './components/Admin/AdminLogin';
@@ -72,6 +75,7 @@ const App = () => {
             <Route path="/view" element={<ViewProduct />} />
             <Route path="/add" element={<AddProduct />} />
             <Route path="/printreport" element={<PrintReport />} />
+            <Route path="/busschedule" element={<Schedule />} />
 
 
             <Route path="/contact" element={<ContactUs />} />
@@ -106,6 +110,7 @@ const App = () => {
 
             <Route path="/TopUp" element={<TopUp />} />
             <Route path="/Pakages" element={<PakageHome />} />
+            <Route path="/AboutUs" element={<AboutUs />} />
             
 
 

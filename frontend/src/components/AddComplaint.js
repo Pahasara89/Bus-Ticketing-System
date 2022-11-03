@@ -3,6 +3,8 @@ import axios from "axios";
 import HomeNavBar from "./HomeNavBar";
 import './Feedback.css'
 import swal from "sweetalert2";
+import {FaHome} from "react-icons/fa";
+import {Link} from "react-router-dom";
 
 
 
@@ -89,7 +91,9 @@ export default function AddComplaint() {
                     <div class="centerb"><button type="submit" className="btn btn-primary">Submit</button></div>
                 </form>
             </div>
+            <Link to="/customer-home" class="btn homebtn"><FaHome/><span style={{position:"relative", top:"1.5px",marginLeft:"2px"}}>Back to Home</span></Link>
             </div>
+          
         </>
 
     )

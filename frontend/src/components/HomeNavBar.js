@@ -133,7 +133,7 @@ function HomeNavBar() {
               </Nav.Link>
 
               <Nav.Link>
-                <Link to='/printreport' className='homenav-links'>
+                <Link to='/busschedule' className='homenav-links'>
                   Bus schedule
                 </Link>
               </Nav.Link>

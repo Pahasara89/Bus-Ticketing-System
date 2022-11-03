@@ -19,7 +19,7 @@ const ViewPaymentDetailsTable = ({Payment_Details , handleEditClick, handleDelet
                 <td className='td'>{Payment_Details.Pay_ID}</td>
                 <td className='td'>{Payment_Details.BanK_Owner_Name}</td>
 
-                <td className='td'>{Payment_Details.Order_ID}</td>
+    
                 <td className='td'>{Payment_Details.Totle_price}</td>
 
                 

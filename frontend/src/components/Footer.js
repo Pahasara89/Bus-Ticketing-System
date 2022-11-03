@@ -51,12 +51,15 @@ function Footer() {
             </Link>
             
             </div>
-
-         <div className='website-rights'>
-          <small> EasyGoing © 2022</small>
-          </div>
         
       </section>
+<br/><br/>
+      <Link to = '/add-feedback'><button  className="feedback_btn"> Give Us Feedbacks </button></Link>
+
+      <div className='website-rights'>
+          <small> EasyGoing © 2022</small>
+          </div>
+          
     </div>
   )
 }

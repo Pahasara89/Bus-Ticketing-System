@@ -34,10 +34,7 @@ const ViweOnePaymentData = () => {
         Expiry: "",
         Cvv: "",
 
-        Strees_Address: "",
-        City: "",
-        State: "",
-        Zip_Code: "",
+      
     });
 
     //ohtnata one key tik okkoma danna\
@@ -67,10 +64,7 @@ const ViweOnePaymentData = () => {
                      Expiry: allPaymentData.Expiry,
                      Cvv: allPaymentData.Cvv,
 
-                     Strees_Address: allPaymentData.Strees_Address,
-                     City: allPaymentData.City,
-                     State: allPaymentData.State,
-                     Zip_Code: allPaymentData.Zip_Code,
+                  
                     })
             })
 
@@ -152,57 +146,10 @@ const ViweOnePaymentData = () => {
                     </tr>
 
                     <br />
-                    <tr>
-                    <td>
-                    <div className="col-md-5 element">
-                        <label for="inputQuant4" className="form-label1">BILLING ADDRESS</label>
-                        <p className="ViweMore1">Strees Address</p>
-                        <p  className="ViweMore" >{PaymentData.Strees_Address}</p>
-                    </div>
-                    </td>
-                    <td>
-                    <div className="col-md-5 element">
-                        <label for="inputQuant5" className="form-label1"></label>
-                        <p className="ViweMore1">City</p>
-                        <p  className="ViweMore" >{PaymentData.City}</p>
-                    </div>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>
-                    <div className="col-md-5 element">
-                        <p className="ViweMore2">State</p>
-                        <p  className="ViweMore" >{PaymentData.State}</p>
-                    </div>
-                    </td>
-                    <td>
-                    
-                    <div className="col-md-5 element">
-                        <p className="ViweMore2">Zip Code</p>
-                        <p  className="ViweMore" >{PaymentData.Zip_Code}</p>
-                    </div>
-                    </td>
-                    </tr>
-                    <div className="containers4">
-                    <div className="col-md-5 element">
-                        <label for="inputQuant8" className="form-label1">Order ID</label>
-                        <p  className="ViweMore" >{PaymentData.Order_ID}</p>
-                    </div>
+         
+                   
 
-                    <br />
-                    <div className="col-md-5 element">
-                        <label for="inputQuant9" className="form-label1">Totle price ( Rs. )</label>
-                        <p  className="ViweMore" >{PaymentData.Totle_price}</p>
-
-                    </div>
-
-                    <br />
-
-                   </div>
-
-                   <br />
-                   <br />
-                   <br />
+                   
 
                    <Link to="/view_Payment"><button type="submit" className="btn Addbtn" >Back </button></Link>
             

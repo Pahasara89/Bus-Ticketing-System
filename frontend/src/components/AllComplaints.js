@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 import AdminNavBar from "./AdminNavBar";
-import AddProductNavBar from './AddProductNavBar';
+
 
 export default function AllComplaints() {
 
@@ -56,7 +56,7 @@ export default function AllComplaints() {
     return (
         <>
         <AdminNavBar/>
-        <AddProductNavBar />
+       
         <div className="body9">
             <div class='containe'>
                 <br />
@@ -88,6 +88,7 @@ export default function AllComplaints() {
                 </table>
             </div>
             </div>
+           
         </>
     )
 
