@@ -20,7 +20,7 @@ function AdminCards() {
               src="images/package.gif"
               text="Manage Package Details"
               label="Pakage Management"
-              path="/ViewPacakges"
+              path="/MyPackages"
             />
           </ul>
 
@@ -31,7 +31,7 @@ function AdminCards() {
               src="images/user.gif"
               text="Details of Users"
               label="User Management"
-              path="/userManagement"
+              path="/view-user"
             />
 
 

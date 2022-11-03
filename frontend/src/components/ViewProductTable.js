@@ -8,6 +8,7 @@ const ViewProductTable = ({product , handleEditClick, handleDeleteClick}) => {
             <tr>
                 <td className='td'>{product.productID}</td>
                 <td className='td'>{product.productName}</td>
+                <td className='td'>{product.root}</td>
                 <td className='td'>{product.bNo}</td>
                 <td className='td'>{product.category}</td>
                 <td className='td'>{product.date.substring(0,10)}</td>
@@ -39,7 +40,7 @@ const ViewProductTable = ({product , handleEditClick, handleDeleteClick}) => {
                 </td>
                 <td>
                     <button type="button" onClick={(e) => handleEditClick(e,product)}className="btn btn-outline-success">Edit</button>
-                    <Link to ='/printreport'><button type="button" className="btn btn-outline-warning">View</button></Link>
+                    <Link to ='/busschedule'><button type="button" className="btn btn-outline-warning">View</button></Link>
                     <button type="button" onClick={() => handleDeleteClick(product._id)}className="btn btn-outline-danger">Delete</button>
                 </td>
             </tr>

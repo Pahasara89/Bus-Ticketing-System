@@ -50,6 +50,9 @@ import AboutUs from './components/AboutUs';
 
 import AdminRegistration from './components/Admin/AdminRegistration';
 import AdminLogin from './components/Admin/AdminLogin';
+import UserManagement from './components/UserManagement';
+import MyPackage from './components/MyPackage';
+import RenewPackage from './components/RenewPackage';
 
 
 
@@ -111,6 +114,12 @@ const App = () => {
             <Route path="/TopUp" element={<TopUp />} />
             <Route path="/Pakages" element={<PakageHome />} />
             <Route path="/AboutUs" element={<AboutUs />} />
+
+            <Route path="/view-user" element={<UserManagement />} />
+            <Route path="/MyPackages" element={<MyPackage />} />
+            <Route path="/RenewPackage" element={<RenewPackage />} />
+
+
             
 
 

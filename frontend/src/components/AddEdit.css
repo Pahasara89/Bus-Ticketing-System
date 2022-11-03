@@ -12,7 +12,7 @@
 	font-family: sans-serif;
 	background-image: url('../images/bus-new.webp');
 	background-repeat: no-repeat;
-	height: 1090px;
+	height: 1300px;
 	overflow: hidden;
 	background-size: cover;
 	
@@ -30,7 +30,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 950px;
-	height: 930px;
+	height: 1100px;
 	padding: 60px 35px 35px 35px;
 	border-radius: 25px;
 	background-color: rgba(8, 8, 8, 0.7);

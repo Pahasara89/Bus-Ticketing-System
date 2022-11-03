@@ -43,6 +43,13 @@ export default function AddProduct() {
                     <br />
 
                     <div className="col-md-7 element">
+                        <label for="inserProduct" className="form-label1">Root</label>
+                        <input type="text" name="root" className="form-control input-field" id="inserProduct" placeholder="Enter root name" required
+                        />
+                    </div>
+                    <br/>
+
+                    <div className="col-md-7 element">
                         <label for="inserProduct" className="form-label1">Bus Number</label>
                         <input type="text" name="bNo" className="form-control input-field" id="inserProduct" placeholder="Enter bus number" required
                         />

@@ -53,6 +53,7 @@ export default function PrintReport() {
     const [editFormData, setEditFormData] = useState({
         productID: "",
         productName: "",
+        root: "",
         bNo: "",
         category: "",
         date: "",
@@ -81,6 +82,7 @@ export default function PrintReport() {
         const updateProduct = {
             ID: editProduct,
             productName: editFormData.productName,
+            root: editFormData.root,
             bNo: editFormData.bNo,
             category: editFormData.category,
             price: editFormData.price,
@@ -120,6 +122,7 @@ export default function PrintReport() {
         const formValues = {
             productID: product.productID,
             productName: product.productName,
+            root: product.root,
             bNo: product.bNo,
             category: product.category,
             date: product.date,
@@ -232,12 +235,13 @@ export default function PrintReport() {
                                 <tr>
                                     <th>Bus ID</th>
                                     <th>Roote Number</th>
+                                    <th>Root</th>
                                     <th>Bus Number</th>
                                     <th>Bus Category</th>
                                     <th>Date</th>
                                     <th>Time Schedule</th>
                                     <th>Price</th>
-                                    <th>Bus Quantity</th>
+                                    <th>Availabel Seats</th>
                                     <th>Stock</th>
 
                                 </tr>
@@ -255,6 +259,7 @@ export default function PrintReport() {
                                         <tr>
                                             <td className='td'>{product.productID}</td>
                                             <td className='td'>{product.productName}</td>
+                                            <td className='td'>{product.root}</td>
                                             <td className='td'>{product.bNo}</td>
                                             <td className='td'>{product.category}</td>
                                             <td className='td'>{product.date.substring(0, 10)}</td>

@@ -29,6 +29,7 @@ router.post('/add', upload, async(req,res)=>{
 
         productID: req.body,
         productName: req.body.productName,
+        root: req.body.root,
         bNo: req.body.bNo,
         category: req.body.category,
         date: req.body.date,
@@ -89,6 +90,7 @@ router.route("/view").get((req,res)=>{
 router.route("/update/:ID").put(async(req,res)=>{
     let productId = req.body.ID;
     const {productName} = req.body;
+    const {root} = req.body;
     const {bNo} = req.body;
     const {category} = req.body;
     const {price} = req.body;
@@ -97,6 +99,7 @@ router.route("/update/:ID").put(async(req,res)=>{
 
     const Update = {
         productName,
+        root,
         bNo,
         category,
         price,

@@ -27,5 +27,14 @@ router.post("/registration", async (req, res) => {
 	}
 });
 
+router.route("/view-user").get((req, res) => {
+	User.find().then((users) => {
+		res.json(users);
+	  })
+	  .catch((err) => {
+		console.log(err);
+	  });
+  });
+
 
 module.exports = router;

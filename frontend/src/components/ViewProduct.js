@@ -46,6 +46,7 @@ export default function ViewProducts(){
     const [editFormData, setEditFormData] = useState({
         productID: "",
         productName: "",
+        root: "",
         bNo: "",
         category: "",
         date: "",
@@ -58,7 +59,7 @@ export default function ViewProducts(){
     const handleEditFormChange = (e) => {
         e.preventDefault();
 
-        const fieldName = e.target.getAttribute("name");
+        const fieldName = e.target.getAttribute("number");
         const fieldValue = e.target.value;
 
         const newFormData = {...editFormData};
@@ -74,6 +75,7 @@ export default function ViewProducts(){
         const updateProduct ={
             ID: editProduct,
             productName: editFormData.productName,
+            root: editFormData.root,
             bNo: editFormData.bNo,
             category: editFormData.category,
             price: editFormData.price,
@@ -113,6 +115,7 @@ export default function ViewProducts(){
         const formValues = {
             productID: product.productID,
             productName: product.productName,
+            root: product.root,
             bNo: product.bNo,
             category: product.category,
             date: product.date,
@@ -172,12 +175,13 @@ export default function ViewProducts(){
                         <tr>
                             <th>Bus ID</th>
                             <th>Roote Number</th>
+                            <th>Root</th>
                             <th>Bus Number</th>
                             <th>Bus Category</th>
                             <th>Date</th>
                             <th>Time Schedule</th>
                             <th>Price</th>
-                            <th>Bus Quantity</th>
+                            <th>Available Seats</th>
                             <th>Stock</th>
                             <th>Actions</th>
                         </tr>

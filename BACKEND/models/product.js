@@ -17,6 +17,12 @@ const productSchema = new Schema({
         unique: true,
 
     },
+    root: {
+        type : String,
+        required : true,
+       
+
+    },
     bNo : {
         type : String,
         required : true,

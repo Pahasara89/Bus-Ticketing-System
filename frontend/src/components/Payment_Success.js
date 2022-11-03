@@ -112,12 +112,12 @@ function Payment_Success() {
              
             
             <div ref={componentRef}>
+
+       
               
                   <div className="containers5">
                   
                       <h1>Purchase Details</h1>
-                      <p className='Receipt3'>Payment ID :</p>
-                      <p className='Receipt2'>{Pay_ID}</p>
 
                    
 
@@ -127,7 +127,7 @@ function Payment_Success() {
                     
 
                       <p className='Receipt3'>Totle Amount :</p>
-                      <p className='Receipt2'>{Totle_price}</p>
+                      <p className='Receipt2'>1000</p>
 
                       <p className='Receipt3'>Date :</p>
                       <p className='Receipt2'>{Pay_date}</p>
