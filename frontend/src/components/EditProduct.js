@@ -7,29 +7,30 @@ const EditProduct = ({editFormData, handleEditFormChange, handleCancelClick}) =>
                 
             </td>
             <td>
-                <input type="text" required="required" placeholder='Enter product name...' name="productName" value={editFormData.productName} onChange={handleEditFormChange}/>
+                <input type="text" required="required" placeholder='Enter root number...' name="productName" value={editFormData.productName} onChange={handleEditFormChange}/>
+            </td>
+            <td>
+              
             </td>
             <td>
                 <select required="required" name="category">
                             <option>Choose...</option>
-                            <option>Pizza</option>
-                            <option>Burgers</option>
-                            <option>Shawarma</option>
-                            <option>Hot Dogs</option>
+                            <option>HigyWay Express Bus</option>
+                            <option>Private Bus</option>
+                            <option>SLTB</option>
                             
                 </select>
             </td>
+
+            <td>
+                <input type="text" required="required" placeholder='Enter date...' name="productName" value={editFormData.date} onChange={handleEditFormChange}/>
+            </td>
+        
+
             <td>
                 
             </td>
-            <td>
-                <select required="required" name="size">
-                            <option>Choose...</option>
-                            <option>Small</option>
-                            <option>Medium</option>
-                            <option>Large</option>
-                </select>
-            </td>
+
             <td>
                 <input type="text" required="required" placeholder='Enter unit price...' name="price" value={editFormData.price} onChange={handleEditFormChange}/>
             </td>

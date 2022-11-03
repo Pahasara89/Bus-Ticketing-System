@@ -24,14 +24,9 @@ function AdminNavBar () {
       
 
         <div id='hdLogo'> 
-                <img alt="Logo"  src={require("../images/Cafe.png")} width="90"  height="55" className="d-inline-block align-top" /> 
+                <img alt="Logo"  src={require("../images/logo.png")} width="90"  height="55" className="d-inline-block align-top" /> 
             </div>
-            
-          <Navbar.Brand>
-          <Link to='/admin-home' className='homenavbar-logo'>
-                  Cafe SecretAlly
-          </Link>
-          </Navbar.Brand>
+   
   
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

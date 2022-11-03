@@ -61,14 +61,9 @@ function HomeNavBar() {
       <Container>
 
         <div id='hdLogo'>
-          <img alt="Logo" src={require("../images/Cafe.png")} width="90" height="55" className="d-inline-block align-top" />
+          <img alt="Logo" src={require("../images/logo.png")} width="90" height="55" className="d-inline-block align-top" />
         </div>
 
-        <Navbar.Brand>
-          <Link to='/customer-home' className='homenavbar-logo'>
-            easygoing
-          </Link>
-        </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -138,7 +133,7 @@ function HomeNavBar() {
               </Nav.Link>
 
               <Nav.Link>
-                <Link to='/' className='homenav-links'>
+                <Link to='/printreport' className='homenav-links'>
                   Bus schedule
                 </Link>
               </Nav.Link>

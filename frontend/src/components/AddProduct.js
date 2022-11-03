@@ -19,38 +19,45 @@ export default function AddProduct() {
     return (
     
 
-        <div className="body">
+        <div className="body22">
             <AdminNavBar/>
             <AddProductNavBar />
             
             <br></br>
             <br></br>
 
-            <div className="containerss">
+            <div className="containersss">
                 <form action="http://localhost:5000/product/add" method="post" class="form img " encType="multipart/form-data">
 
-                    <h5>Add Product</h5>
+                    <h5>Add Bus Shedule</h5>
                     <br />
 
                     <br />
 
                     <div className="col-md-7 element">
-                        <label for="inserProduct" className="form-label1">Product Name</label>
-                        <input type="text" name="productName" className="form-control input-field" id="inserProduct" placeholder="Enter product name" required
+                        <label for="inserProduct" className="form-label1">Root No.</label>
+                        <input type="number" name="productName" className="form-control input-field" id="inserProduct" placeholder="Enter root number" required
                         />
                     </div>
 
                     <br />
 
                     <div className="col-md-7 element">
-                        <label className="form-label1" for="categorySelect">Category</label>
+                        <label for="inserProduct" className="form-label1">Bus Number</label>
+                        <input type="text" name="bNo" className="form-control input-field" id="inserProduct" placeholder="Enter bus number" required
+                        />
+                    </div>
+
+                    <br/>
+
+                    <div className="col-md-7 element">
+                        <label className="form-label1" for="categorySelect">Bus Category</label>
                         <select name="category" className="form-select" id="categorySelect"
                         >
                             <option>Choose...</option>
-                            <option>Pizza</option>
-                            <option>Burgers</option>
-                            <option>Shawarma</option>
-                            <option>Hot dogs</option>
+                            <option>HighWay Express Bus</option>
+                            <option>Private Bus</option>
+                            <option>SLTB</option>
                         </select>
                     </div>
 
@@ -66,21 +73,9 @@ export default function AddProduct() {
                         <tr>
                             <td>
                                 <div className="col-md-10">
-                                    <label for="inputQuant" className="form-label1">Quantity</label>
-                                    <input name="quantity" type="number" className="form-control" id="inputQuant" placeholder="Enter the quantity"
+                                    <label for="inputQuant" className="form-label1">Bus Quantity</label>
+                                    <input name="quantity" type="number" className="form-control" id="inputQuant" placeholder="Enter bus quantity"
                                     />
-                                </div>
-                            </td>
-
-                            <td>
-                                <div className="col-md-14">
-                                    <label for="" className="form-label1">Unit</label>
-                                    <select id="inputState" className="form-select" name="unit">
-                                        <option selected>Choose...</option>
-                                        <option value="pcs">pieces</option>
-                                        <option value="kg">kg</option>
-                                        <option value="ℓ">liter</option>
-                                    </select>
                                 </div>
                             </td>
                         </tr>
@@ -97,19 +92,13 @@ export default function AddProduct() {
                     <br />
 
                     <div className="col-md-7 element">
-                        <label className="form-label1" for="categorySelect">Size</label>
-                        <select name="size" className="form-select" id="sizeSelect"
-                        >
-                            <option>Choose...</option>
-                            <option>Small</option>
-                            <option>Medium</option>
-                            <option>Large</option>
-                        </select>
+                        <label for="inserProduct" className="form-label1">Time Schedule</label>
+                        <input type="text" name="size" className="form-control input-field" id="inserProduct" placeholder="Enter time shedule" required
+                        />
                     </div>
 
-                    <br />
+                    <br/>
 
-                    <br /><br />
 
                     <div className="element">
                         <label for="actual-btn" className="form-label1">Upload Product Image</label>

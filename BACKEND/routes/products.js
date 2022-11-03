@@ -29,6 +29,7 @@ router.post('/add', upload, async(req,res)=>{
 
         productID: req.body,
         productName: req.body.productName,
+        bNo: req.body.bNo,
         category: req.body.category,
         date: req.body.date,
         price: req.body.price,
@@ -59,7 +60,7 @@ router.post('/add', upload, async(req,res)=>{
     
         }
     
-        newProduct.productID = `PID${numberToString}`
+        newProduct.productID = `BID${numberToString}`
 
     newProduct.save().then(()=>{
         alert('Product added successfully');
@@ -88,6 +89,7 @@ router.route("/view").get((req,res)=>{
 router.route("/update/:ID").put(async(req,res)=>{
     let productId = req.body.ID;
     const {productName} = req.body;
+    const {bNo} = req.body;
     const {category} = req.body;
     const {price} = req.body;
     const {quantity} = req.body;
@@ -95,6 +97,7 @@ router.route("/update/:ID").put(async(req,res)=>{
 
     const Update = {
         productName,
+        bNo,
         category,
         price,
         quantity,

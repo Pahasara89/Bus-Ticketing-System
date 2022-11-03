@@ -46,6 +46,7 @@ export default function ViewProducts(){
     const [editFormData, setEditFormData] = useState({
         productID: "",
         productName: "",
+        bNo: "",
         category: "",
         date: "",
         size: "",
@@ -73,6 +74,7 @@ export default function ViewProducts(){
         const updateProduct ={
             ID: editProduct,
             productName: editFormData.productName,
+            bNo: editFormData.bNo,
             category: editFormData.category,
             price: editFormData.price,
             quantity: editFormData.quantity
@@ -111,6 +113,7 @@ export default function ViewProducts(){
         const formValues = {
             productID: product.productID,
             productName: product.productName,
+            bNo: product.bNo,
             category: product.category,
             date: product.date,
             price: product.price,
@@ -157,7 +160,7 @@ export default function ViewProducts(){
             
             <div id="repGSearch" className='col-lg-3 mt-2 mb-2 ml-5'>
 
-                <input type="search" className="form-control" placeholder="Search Products..." value={q} onChange={(e)=> setQ(e.target.value)}/>      
+                <input type="search" className="form-control" placeholder="Search Root..." value={q} onChange={(e)=> setQ(e.target.value)}/>      
 
             </div>
             
@@ -167,13 +170,14 @@ export default function ViewProducts(){
                 <table className='table '>
                     <thead>
                         <tr>
-                            <th>ProductID</th>
-                            <th>ProductName</th>
-                            <th>Category</th>
+                            <th>Bus ID</th>
+                            <th>Roote Number</th>
+                            <th>Bus Number</th>
+                            <th>Bus Category</th>
                             <th>Date</th>
-                            <th>Size</th>
+                            <th>Time Schedule</th>
                             <th>Price</th>
-                            <th>Quantity</th>
+                            <th>Bus Quantity</th>
                             <th>Stock</th>
                             <th>Actions</th>
                         </tr>

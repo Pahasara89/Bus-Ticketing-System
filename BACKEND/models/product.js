@@ -12,9 +12,15 @@ const productSchema = new Schema({
         
     },
     productName : {
-        type : String,
+        type : Number,
         required : true,
         unique: true,
+
+    },
+    bNo : {
+        type : String,
+        required : true,
+       
 
     },
     category : {
@@ -32,10 +38,6 @@ const productSchema = new Schema({
     quantity : {
         type : Number,
         required : true
-    },
-    unit : {
-        type: String,
-        required: true
     },
     size : {
         type: String,

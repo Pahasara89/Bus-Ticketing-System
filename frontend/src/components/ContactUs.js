@@ -13,10 +13,6 @@ const ContactUs = () => {
                         <div class="left-side">
                         <div class="address details">
                             <i class="fas fa-map-marker-alt"></i>
-                            <div class="topic">Address</div>
-                            <div class="text-one">No 24 Athurugiriya Road</div>
-                            <div class="text-two">Malabe</div>
-                            <div class="text-two">Sri Lanka</div>
                         </div>
                         <div class="phone details">
                             <i class="fas fa-phone-alt"></i>
@@ -27,8 +23,8 @@ const ContactUs = () => {
                         <div class="email details">
                             <i class="fas fa-envelope"></i>
                             <div class="topic">Email</div>
-                            <div class="text-one">cafesecretally@gmail.com</div>
-                            <div class="text-two">info.cafesecretally@gmail.com</div>
+                            <div class="text-one">easygoing@gmail.com</div>
+                            <div class="text-two">info.easygoing@gmail.com</div>
                         </div>
                         </div>
                         <div class="right-side">

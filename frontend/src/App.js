@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
+import LoadingPage from './components/LoadingPage';
 import Home from './components/Home';
 import AdminHome from './components/AdminHome';
 import ViewAdmin from './components/ViewAdmin';
@@ -10,41 +11,31 @@ import ViewAdmin from './components/ViewAdmin';
 
 import AddProduct from './components/AddProduct';
 import ViewProduct from './components/ViewProduct';
-/*import Burgers from './components/Burgers';
-import Pizza from './components/Pizza';
-import Shawarma from './components/Shawarma';
-import HotDogs from './components/HotDogs';
-import Cart from './components/Cart';*/
 import PrintReport from './components/PrintReport';
 
 import AddPaymentDetails from './components/AddPaymentDetails';
 import ViewPaymentDetails from './components/ViewPaymentDetails';
 
-/*import AddDeliveries from './components/AddDeliveries';
-import ViewDeliveries from './components/ViewDeliveries';
-import GenerateReport from './components/GenerateReport';
-import AddOrders from './components/AddOrders';
-import ViewOrders from './components/ViewOrders';*/
+
 
 import ContactUs from './components/ContactUs';
 import AllComplaints from './components/AllComplaints';
-
 import AddComplaint from './components/AddComplaint';
+
 
 import AddSuccess from './components/Payment_Success';
 import ViewOnePaymentDetails from './components/ViweOnePaymentData';
 import PrintPaymentDetail from './components/printPaymentDetails';
 
-import LoadingPage from './components/LoadingPage';
+
+
+import RegisterCard from './components/RegisterCard';
+import LoginCard from './components/LoginCard';
 
 import Foreign_Login from './components/User/Foreign_Login';
 import UserLogin from './components/User/UserLogin';
 
 
-
-
-import RegisterCard from './components/RegisterCard';
-import LoginCard from './components/LoginCard';
 import Foreign_Register from './components/User/Foreign_Register';
 import UserRegistration from './components/User/UserRegistration';
 
@@ -62,71 +53,67 @@ import AdminLogin from './components/Admin/AdminLogin';
 
 
 
- const App = () =>{
+const App = () => {
 
 
- return (
-   <Router>
-     <div>
-     
-       <main>
-         <Routes>
-          
-           
-           <Route path="/customer-home" element={<Home/>} />
-           <Route path="/admin-home" element={<AdminHome/>} />
+  return (
+    <Router>
+      <div>
 
-            <Route path="/view" element={<ViewProduct/>} />
-            <Route path="/add" element={<AddProduct/>} />
-            <Route path = "/view-admin" element={<ViewAdmin/>}/>
-            <Route path="/printreport" element={<PrintReport/>}/>
+        <main>
+          <Routes>
 
-          
-            <Route path="/contact" element={<ContactUs/>}/>
-            <Route path='/add-feedback' element={<AddComplaint/>}/>
-            <Route path='/view-feedback' element={<AllComplaints/>}/>
-            
+            <Route path="/" element={<LoadingPage />} />
+            <Route path="/customer-home" element={<Home />} />
+            <Route path="/admin-home" element={<AdminHome />} />
+            <Route path="/view-admin" element={<ViewAdmin />} />
 
-            <Route path="/add_Payment" element={<AddPaymentDetails/>} />
-            <Route path="/view_Payment" element={<ViewPaymentDetails/>} />
-
-            <Route path="/view_Payment_Details/:id" element={<ViewOnePaymentDetails/>} />
-            <Route path="/Success_payment" element={<AddSuccess/>} />
-            <Route path="/printPaymentDetails" element={<PrintPaymentDetail/>} />
-           
-            
+            <Route path="/view" element={<ViewProduct />} />
+            <Route path="/add" element={<AddProduct />} />
+            <Route path="/printreport" element={<PrintReport />} />
 
 
-            <Route path="/" element={<LoadingPage/>}/>
-            <Route path ='/RegisterCard' element={<RegisterCard/>}/>
-            <Route path ='/LoginCard' element={<LoginCard/>}/>
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path='/add-feedback' element={<AddComplaint />} />
+            <Route path='/view-feedback' element={<AllComplaints />} />
 
-            <Route path="/Foreign_Register" element={<Foreign_Register/>}/>
-            <Route path="/UserRegistration" element={<UserRegistration/>}/>
-            
-            <Route path="/Foreign_Login" element={<Foreign_Login/>}/>
-            <Route path="/UserLogin" element={<UserLogin/>}/>
 
-            <Route path="/AdminRegistration" element={<AdminRegistration/>}/>
-            <Route path="/AdminLogin" element={<AdminLogin/>}/>
-
-            <Route path="/TopUp" element={<TopUp/>}/>
-            <Route path="/Pakages" element={<PakageHome/>}/>
-            <Route path="/Register" element={<Register/>}/>
-            <Route path="/Login" element={<Login/>}/>
-        
+            <Route path="/add_Payment" element={<AddPaymentDetails />} />
+            <Route path="/view_Payment" element={<ViewPaymentDetails />} />
+            <Route path="/view_Payment_Details/:id" element={<ViewOnePaymentDetails />} />
+            <Route path="/Success_payment" element={<AddSuccess />} />
+            <Route path="/printPaymentDetails" element={<PrintPaymentDetail />} />
 
 
 
 
 
-         </Routes>
-      
-       </main>
-       
-     </div>
-   </Router>
- );
- }; 
+            <Route path='/RegisterCard' element={<RegisterCard />} />
+            <Route path='/LoginCard' element={<LoginCard />} />
+
+            <Route path="/Foreign_Register" element={<Foreign_Register />} />
+            <Route path="/UserRegistration" element={<UserRegistration />} />
+
+            <Route path="/Foreign_Login" element={<Foreign_Login />} />
+            <Route path="/UserLogin" element={<UserLogin />} />
+
+            <Route path="/AdminRegistration" element={<AdminRegistration />} />
+            <Route path="/AdminLogin" element={<AdminLogin />} />
+
+            <Route path="/TopUp" element={<TopUp />} />
+            <Route path="/Pakages" element={<PakageHome />} />
+            <Route path="/Register" element={<Register />} />
+            <Route path="/Login" element={<Login />} />
+
+
+
+          </Routes>
+
+        </main>
+
+      </div>
+    </Router>
+  );
+};
 
 export default App;

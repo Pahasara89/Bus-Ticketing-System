@@ -9,6 +9,8 @@ import './HomeNavBar.css'
 import AdminNavBar from "./AdminNavBar";
 import swal from "sweetalert2";
 import styles from "./style.module.css";
+import HomeNavBar from './HomeNavBar';
+import ViewProductTable from './ViewProductTable';
 
 export default function PrintReport() {
 
@@ -51,6 +53,7 @@ export default function PrintReport() {
     const [editFormData, setEditFormData] = useState({
         productID: "",
         productName: "",
+        bNo: "",
         category: "",
         date: "",
         size: "",
@@ -78,6 +81,7 @@ export default function PrintReport() {
         const updateProduct = {
             ID: editProduct,
             productName: editFormData.productName,
+            bNo: editFormData.bNo,
             category: editFormData.category,
             price: editFormData.price,
             quantity: editFormData.quantity
@@ -116,6 +120,7 @@ export default function PrintReport() {
         const formValues = {
             productID: product.productID,
             productName: product.productName,
+            bNo: product.bNo,
             category: product.category,
             date: product.date,
             price: product.price,
@@ -160,8 +165,8 @@ export default function PrintReport() {
 
     return (
         <div>
-            <AdminNavBar />
-            <ViewProductNavBar />
+            <HomeNavBar />
+
 
             <br></br>
             <br></br>
@@ -224,13 +229,14 @@ export default function PrintReport() {
                         <table className='table '>
                             <thead>
                                 <tr>
-                                    <th>ProductID</th>
-                                    <th>ProductName</th>
-                                    <th>Category</th>
+                                    <th>Bus ID</th>
+                                    <th>Roote Number</th>
+                                    <th>Bus Number</th>
+                                    <th>Bus Category</th>
                                     <th>Date</th>
-                                    <th>Size</th>
-                                    <th>Price(Rs.)</th>
-                                    <th>Quantity</th>
+                                    <th>Time Schedule</th>
+                                    <th>Price</th>
+                                    <th>Bus Quantity</th>
                                     <th>Stock</th>
 
                                 </tr>
@@ -248,14 +254,16 @@ export default function PrintReport() {
                                         <tr>
                                             <td className='td'>{product.productID}</td>
                                             <td className='td'>{product.productName}</td>
+                                            <td className='td'>{product.bNo}</td>
                                             <td className='td'>{product.category}</td>
                                             <td className='td'>{product.date.substring(0, 10)}</td>
                                             <td className='td'>{product.size}</td>
-                                            <td className='td'>{product.price}</td>
+                                            <td className='td'>LKR.{product.price}.00</td>
+                                            <td className='td'>{product.quantity}{product.unit}</td>
                                             <td>
                                                 {(() => {
 
-                                                    if (product.quantity <= 25) {
+                                                    if (product.quantity <= 10) {
 
                                                         return (
 
@@ -275,7 +283,7 @@ export default function PrintReport() {
 
                                                 })()}
                                             </td>
-                                            <td className='td'>{product.quantity}</td>
+                                            
                                         </tr>
                                     </Fragment>
 
