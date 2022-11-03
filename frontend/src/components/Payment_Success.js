@@ -103,14 +103,7 @@ function Payment_Success() {
     // </div>
     <>
     <div >
-                       {Payment_Details.filter((Payment_Details)=> {
-                            if(q === ""){
-                                return Payment_Details
-                            }else if(Payment_Details.Order_ID.toLowerCase().includes(q.toLowerCase())){
-                              localStorage.setItem("Pay_ID", Payment_Details.Pay_ID);
-                            }
-                        })} 
-      
+                  
       <HomeNavBar/>
             
             <body className='body4'>
@@ -124,14 +117,12 @@ function Payment_Success() {
                       <p className='Receipt3'>Payment ID :</p>
                       <p className='Receipt2'>{localStorage.getItem("Pay_ID")}</p>
 
-                      <p className='Receipt3'>Order ID :</p>
-                      <p className='Receipt2'>{Order_ID}</p>
+                   
 
                       <p className='Receipt3'>Name :</p>
                       <p className='Receipt2'>{bankOwnerName}</p>
 
-                      <p className='Receipt3'>Order No :</p>
-                      <p className='Receipt2'>{Order_ID}</p>
+                    
 
                       <p className='Receipt3'>Totle Amount :</p>
                       <p className='Receipt2'>{Totle_price}</p>

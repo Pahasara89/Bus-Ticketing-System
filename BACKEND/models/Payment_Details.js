@@ -40,40 +40,8 @@ const Payment_DetailsSchema = new Schema({
         type: Number,
         required: true
     },
- /*----------------------------------------*/   
-    
-    Strees_Address : {
-        type: String,
-        required: true
-    },
-    City : {
-        type: String,
-        required: true
-    },
-    State : {
-        type: String,
-        required: true
-    },
-    Zip_Code : {
-        type: String,
-        required: true
-    },
 
-/*----------------------------------------*/
-    Order_ID : {
-        type: String,
-        required: true
-    },
-    Totle_price : {
-        type : Number,
-        required : true
-    },
-    
-    /*image : {
-        type : String,
-        required : true,
-        unique : true
-    }*/
+ 
     
 
     

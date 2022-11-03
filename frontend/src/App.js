@@ -53,6 +53,7 @@ import AdminLogin from './components/Admin/AdminLogin';
 
 
 
+
 const App = () => {
 
 
@@ -100,10 +101,15 @@ const App = () => {
             <Route path="/AdminRegistration" element={<AdminRegistration />} />
             <Route path="/AdminLogin" element={<AdminLogin />} />
 
-            <Route path="/TopUp" element={<TopUp />} />
-            <Route path="/Pakages" element={<PakageHome />} />
             <Route path="/Register" element={<Register />} />
             <Route path="/Login" element={<Login />} />
+
+            <Route path="/TopUp" element={<TopUp />} />
+            <Route path="/Pakages" element={<PakageHome />} />
+            
+
+
+        
 
 
 

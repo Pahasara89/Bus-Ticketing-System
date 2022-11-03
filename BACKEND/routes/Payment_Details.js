@@ -5,24 +5,7 @@ const alert = require('alert');
 const Mongoose = require('mongoose');
 let Payment_Details = require("../models/Payment_Details");
 
-//image upload
-/*const storage = multer.diskStorage ({
-    destination : (req, file, cb) => {
-        cb(null, 'backend/uploads');
-    },
 
-    filename : (req,file,cb) => {
-        cb(null, Date.now() + file.originalname)
-    }
-    
-});
-
-const upload = multer({
-    storage:storage,
-    
-}).single('image')
-
-*/
 router.post('/add_Payment', async(req,res)=>{
 
     const newPayment_Details = new Payment_Details({
@@ -37,13 +20,7 @@ router.post('/add_Payment', async(req,res)=>{
         Expiry: req.body.Expiry,
         Cvv: req.body.Cvv,
 
-        Strees_Address: req.body.Strees_Address,
-        City: req.body.City,
-        State: req.body.State,
-        Zip_Code: req.body.Zip_Code,
-
-        Order_ID: req.body.Order_ID,
-        Totle_price: req.body.Totle_price,
+   
         
     })
 
@@ -117,13 +94,8 @@ router.route("/update_Payment_Details/:ID").put(async(req,res)=>{
     const {Expiry} = req.body;
     const {Cvv} = req.body;
 
-    const {Strees_Address} = req.body;
-    const {City} = req.body;
-    const {State} = req.body;
-    const {Zip_Code} = req.body;
 
-    const {Order_ID} = req.body;
-    const {Totle_price} = req.body;
+ 
 
     const Update = {
         BanK_Owner_Name,
@@ -134,13 +106,8 @@ router.route("/update_Payment_Details/:ID").put(async(req,res)=>{
         Expiry,
         Cvv,
 
-        Strees_Address,
-        City,
-        State,
-        Zip_Code,
 
-        Order_ID,
-        Totle_price,
+     
 
     }
 
@@ -155,24 +122,7 @@ router.route("/update_Payment_Details/:ID").put(async(req,res)=>{
 
 
 
-/*
 
-router.route("/update/quantity/:ID").put(async(req,res)=>{
-    let productId = req.params.ID;
-    const {quantity} = req.body;
-
-    const Update = {
-        quantity,
-    }
-
-    const update = await Product.findByIdAndUpdate(productId, Update).then(()=>{
-        res.status(200).send({status: "Price updated"})
-    }).catch((err)=>{
-        console.log(err);
-        res.status(500).send({status: "Error with updating price", error: err.message});
-    })
-})
-*/
 
 router.route("/delete/:id").delete(async(req,res)=>{
     const id = req.params.id;

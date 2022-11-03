@@ -145,7 +145,7 @@ function HomeNavBar() {
               </Nav.Link>
 
               <Nav.Link>
-                <Link to='/Pakages' className='homenav-links'>
+                <Link to='/MyPakages' className='homenav-links'>
                   Renew packages
                 </Link>
               </Nav.Link>
