@@ -11,6 +11,8 @@ import swal from "sweetalert2";
 import styles from "./style.module.css";
 import HomeNavBar from './HomeNavBar';
 import ViewProductTable from './ViewProductTable';
+import EnterForm from './EnterForm';
+import Footer from './Footer';
 
 export default function PrintReport() {
 
@@ -167,12 +169,14 @@ export default function PrintReport() {
 
 
     return (
+        <>
         <div>
-            <HomeNavBar />
+            <EnterForm />
 
 
             <br></br>
             <br></br>
+
 
             <div>
                 <form onSubmit={handleSubmit}>
@@ -232,6 +236,7 @@ export default function PrintReport() {
                         <table className='table '>
                             <thead>
                                 <tr>
+                                    <th>Product</th>
                                     <th>Bus ID</th>
                                     <th>Roote Number</th>
                                     <th>Root</th>
@@ -246,6 +251,7 @@ export default function PrintReport() {
                             </thead>
 
                             <tbody>
+                                
                                 {products.filter((product) => {
                                     if (q === "") {
                                         return product
@@ -279,5 +285,7 @@ export default function PrintReport() {
 
             </div>
         </div>
+        <Footer/>
+        </>
     );
 }

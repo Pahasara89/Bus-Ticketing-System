@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-import HomeNavBar from "./HomeNavBar";
 import './Feedback.css'
 import swal from "sweetalert2";
 import {FaHome} from "react-icons/fa";
 import {Link} from "react-router-dom";
+import EnterForm from "./EnterForm";
 
 
 
@@ -54,7 +54,7 @@ export default function AddComplaint() {
 
     return (
         <>
-        <HomeNavBar />
+        <EnterForm />
         <div className="bodys">
             <div className="conta">
                 <h2>Add Feedback</h2>

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 import AdminNavBar from "./AdminNavBar";
+import {Link} from "react-router-dom";
+import {FaHome} from "react-icons/fa";
 
 
 export default function AllComplaints() {
@@ -56,6 +58,7 @@ export default function AllComplaints() {
     return (
         <>
         <AdminNavBar/>
+        <Link to="/admin-home" class="btn homebtn"><FaHome/><span style={{position:"relative", top:"1.5px",marginLeft:"2px"}}>Back to Home</span></Link>
        
         <div className="body9">
             <div class='containe'>

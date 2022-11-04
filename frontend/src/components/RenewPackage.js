@@ -10,6 +10,7 @@ import HomeNavBar from "./HomeNavBar";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import {Link} from "react-router-dom";
+import EnterForm from "./EnterForm"
 
 
 export default function RenewPackage() {
@@ -47,7 +48,7 @@ export default function RenewPackage() {
         <>
             <div >
 
-                <HomeNavBar />
+                <EnterForm />
 
                 <body className='bod2'>
 

@@ -113,13 +113,14 @@ function Payment_Success() {
             
             <div ref={componentRef}>
 
-       
+            {Payment_Details.map(item => (
               
                   <div className="containers5">
                   
                       <h1>Purchase Details</h1>
 
-                   
+                      <p className='Receipt3'>Payment ID :</p>
+                      <p className='Receipt2'>{item.Pay_ID}</p>
 
                       <p className='Receipt3'>Name :</p>
                       <p className='Receipt2'>{bankOwnerName}</p>
@@ -135,8 +136,10 @@ function Payment_Success() {
                       <div className='image1'>
 
                       </div>
+                  
                       
                   </div>
+                   ))}
                   
                  
             

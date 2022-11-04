@@ -17,7 +17,7 @@ import {
 } from "react-bootstrap";
 
 
-function HomeNavBar() {
+function EnterForm() {
 
   const [click, setClick] = useState(false);
   const [length, setLen] = useState("");
@@ -146,14 +146,8 @@ function HomeNavBar() {
               </Nav.Link>
 
               <Nav.Link>
-                <Link to='/Login' className='homenav-links'>
-                  Login
-                </Link>
-              </Nav.Link>
-
-              <Nav.Link>
-                <Link to='/Register' className='homenav-links'>
-                 Register
+                <Link to='/profile' className='homenav-links'>
+                  User
                 </Link>
               </Nav.Link>
 
@@ -173,4 +167,4 @@ function HomeNavBar() {
   );
 }
 
-export default HomeNavBar;
+export default EnterForm;

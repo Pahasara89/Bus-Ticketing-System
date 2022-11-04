@@ -1,7 +1,7 @@
 import React from 'react';
 import AdminCards from './AdminCards';
 import AdminNavBar from './AdminNavBar';
-import Footer from './Footer';
+import AdminFooter from './AdminFooter';
 
 
 export default function AdminHome(){
@@ -9,7 +9,7 @@ export default function AdminHome(){
         <div className='back'>
             <AdminNavBar/>
             <AdminCards/>
-            <Footer/>
+            <AdminFooter/>
         </div>
     )
 }

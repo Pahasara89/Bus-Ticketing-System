@@ -1,8 +1,8 @@
 import React, { useState,useEffect} from "react"
 import Packages from './Pakages';
 import Footer from './Footer';
-import HomeNavBar from './HomeNavBar';
 import CarouselContainer from './CarouselContainer';
+import EnterForm from "./EnterForm";
 
 
 
@@ -29,7 +29,7 @@ export default function Home(){
 
     return(
         <div className='back'>
-            <HomeNavBar/>
+            <EnterForm/>
             <CarouselContainer />
             <Packages/>
             <Footer/>

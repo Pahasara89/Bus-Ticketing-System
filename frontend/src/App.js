@@ -7,6 +7,7 @@ import LoadingPage from './components/LoadingPage';
 import Home from './components/Home';
 import AdminHome from './components/AdminHome';
 import ViewAdmin from './components/ViewAdmin';
+import ProfileScreen from './components/ProfileScreen';
 
 
 import AddProduct from './components/AddProduct';
@@ -74,6 +75,7 @@ const App = () => {
             <Route path="/customer-home" element={<Home />} />
             <Route path="/admin-home" element={<AdminHome />} />
             <Route path="/view-admin" element={<ViewAdmin />} />
+            <Route path="/profile" element={<ProfileScreen />} />
 
             <Route path="/view" element={<ViewProduct />} />
             <Route path="/add" element={<AddProduct />} />

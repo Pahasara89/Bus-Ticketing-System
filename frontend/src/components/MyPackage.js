@@ -5,6 +5,9 @@ import "../App.css";
 import './DownloadInvoice.css';
 import {FiPrinter} from 'react-icons/fi';
 import { useReactToPrint } from "react-to-print";
+import AdminNavBar from "./AdminNavBar";
+import {Link} from "react-router-dom";
+import {FaHome} from "react-icons/fa";
 
 
 const MyPackage = () => {
@@ -43,7 +46,8 @@ const MyPackage = () => {
     return (
 
         <>
-              <button className='btn' onClick={backHome}>Go Back</button>
+        <AdminNavBar/>
+        <Link to="/admin-home" class="btn homebtn"><FaHome/><span style={{position:"relative", top:"1.5px",marginLeft:"2px"}}>Home</span></Link>
               <br/>
     
               <div>

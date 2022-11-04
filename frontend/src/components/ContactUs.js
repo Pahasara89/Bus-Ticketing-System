@@ -2,12 +2,13 @@ import React from "react";
 import './ContactUs.css';
 import Footer from "./Footer";
 import HomeNavBar from "./HomeNavBar";
+import EnterForm from "./EnterForm";
 
 
 const ContactUs = () => {
     return(
         <>
-                <HomeNavBar/>
+                <EnterForm/>
                 <div class="container contact">
                     <div class="content">
                         <div class="left-side">
